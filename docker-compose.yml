@@ -1,6 +1,8 @@
 services:
   web:
-    image: httpd:latest
+    build: 
+      context: .
+      dockerfile: web.dockerfile
     ports:
       - 6969:80
     volumes:
